@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>My Dear Cat </title>
+	</head>
+	<body>
+		<h1>The Old Cat and His life</h1>
+	</body>
+</html>
+
+<script>
+	
+	
+	/* 
+	 * 
+	 * 
+	 */
+	
+	function sortcats(catlist){
+		
+		
+	var catlist = [{"type":"baby", "type":"young"}, {"type": "old"}, {"type": "black"}, {"type": "white"}, {"type": "brown"}, {"type": "old"}, {"type":"young"}, {"type": "gray"}];
+	
+	var chinacatlist = [{"type":"baby", "type":"young"}, {"type": "old"},{"type": "sick"}, {"type": "black"}, {"type": "white"}, {"type": "brown"}, {"type": "old"}, {"type":"young"}, {"type": "gray"}];
+	
+	var UScatlist = [{"type":"baby", "type":"young"}, {"type": "young"}, {"type": "black"}, {"type": "white"}, {"type": "red"}, {"type": "old"}, {"type":"young"}, {"type": "gray"}];
+	
+	
+	
+	
+	console.log(catlist);
+	
+	var goodcats =[];
+	var badcats = [];
+	
+	console.log(goodcats);
+	console.log(badcats);
+	
+	
+	for(var i=0; i<7; i++){
+		
+		console.log(i);
+		
+		var Indiancats = catlist[i];
+		
+		
+		console.log(Indiancats.type);
+		
+		// I am introducing condition as per which i am asking computer if "type" is young add this to object to goodcats 
+		//otherwise , add it to badcats.
+		//I use the double equals to indicate the it "is the same as"
+		
+		if(Indiancats.type == "young"){
+			
+		console.log("found young cats!");
+		goodcats.push(Indiancats);
+			
+		}else{
+			
+			console.log("not young cats");
+			badcats.push(Indiancats);
+		}// here is my end of condition.
+		
+		console.log(goodcats);
+		console.log(badcats);
+		
+	
+	} // end of my for loop
+	
+	console.log("Top List");
+	
+	}// this is the end of my sortcats condition
+	
+	sortcats(chinacatlist);
+	//I am ordering to implement the "sortcats" function.
+	// I am asking the funtion to ran that catlist with different list of catlists.
+	
+	console.log("First List")
+	sortcats(UScatlist);
+	
+	
+	
+</script>
